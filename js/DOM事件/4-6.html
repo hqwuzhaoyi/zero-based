@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    	<p>字数限制在30字内，<span>您还可以输入<b>30</b> 字</span></p>
+		<textarea cols="50"  rows="7"  id="text"></textarea>
+		<script type="text/javascript">
+			//补充代码
+            var text=document.getElementById("text");
+            var b=document.getElementsByTagName("b")[0];
+            var s=document.getElementsByTagName("span")[0];
+            var total=30;
+            document.onkeyup=function(){
+                var len=text.value.length;
+                var allow=total-len;
+               
+                if(allow<0){
+                    s.innerHTML="您已经超出"+(0-allow)+"字";
+                }
+                else{
+                    b.innerHTML=allow;
+                }
+            }
+		</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    姓名：<input type="text" id="name"> <span id="tip"></span>
+
+    <script>
+        var name1 = document.getElementById("name"),
+            tip = document.getElementById("tip");
+        name1.onfocus = function () {
+            if (this.value == "") {
+                tip.innerHTML = "请输入您的姓名";
+            }
+        }
+        name1.onblur=function(){
+            if (this.value == "") {
+                tip.innerHTML = "用户名不能为空";
+                this.style.borderColor="red";
+            }
+            else{
+                tip.innerHTML = "";
+                this.removeAttribute("style");
+            }
+           
+
+        }
+    </script>
+</body>
+
+</html>

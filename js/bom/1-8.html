@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输入框</title>
+</head>
+
+<body>
+    <input type="button" value="点击" id="btn">
+    <script type="text/javascript">
+        //补充代码
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            var result = window.prompt("当当\n当当");
+            if (result != null) {
+                btn.value = result;
+            }
+        }
+    </script>
+</body>
+
+</html>

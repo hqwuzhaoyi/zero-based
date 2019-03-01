@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">div</div>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            // var DOMObject=document.getElementById('div');
+            // var jQueryObject=$('div');
+
+
+
+            // console.log(DOMObject);
+            // console.log(jQueryObject);
+            // console.log(DOMObject.nodeType);
+            // console.log(jQueryObject.jquery);
+            // console.log($(DOMObject));
+            // console.log(jQueryObject.get(0));
+            //______________________________
+            
+            // var div=$('<div>Hello</div>')
+            // console.log(div);
+            // console.log($('div'));
+            // div.appendTo('body');
+            // //________________________________
+            var link1=$('<a>',{
+                text:'baidu',
+                href:'http://www.baidu.com',
+                target:'_blank',//新窗口
+                title:'goto baidu'
+            });
+            link1.appendTo("body");
+            var link2=$('<a>baidu</a>').attr({
+                href:'http://www.baidu.com',
+                target:'_blank',//新窗口
+                title:'goto baidu'
+            });
+            link2.appendTo("body");
+        })
+        
+    </script>
+</body>
+</html>

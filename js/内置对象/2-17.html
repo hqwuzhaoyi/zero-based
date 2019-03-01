@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-17</title>
+</head>
+
+<body>
+    <script>
+        function arrReverse(arr) {
+            var newArr = [],k=arr.length;
+            for (var i = 0; i < k; i++) {
+                newArr[i] = arr.pop(); 
+              
+            }
+            return newArr; 
+            ; 
+        }
+        document.write(arrReverse([1, 2, 3, 4, 5, 6, 7, 8]));
+    </script>
+</body>
+
+</html>

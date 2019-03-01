@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery chapter 2 Demo</title>
+</head>
+<body>
+
+	<script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+    	// var div = $('<div>Hello</div>');
+
+     //    console.log(div);
+
+     //    div.appendTo('body');
+
+     //    console.log($('div'));
+
+        var link = $('<a>', {
+            text: 'baidu',
+            href: 'https://www.baidu.com',
+            target: '_blank',
+            title: 'goto baidu'
+        });
+
+        link.appendTo('body');
+
+        var link2 = $('<a>baidu</a>').attr({
+            href: 'https://www.baidu.com',
+            target: '_blank', 
+            title: 'goto baidu'
+        });
+
+        link2.appendTo('body');
+    })
+    </script>
+</body>
+</html>

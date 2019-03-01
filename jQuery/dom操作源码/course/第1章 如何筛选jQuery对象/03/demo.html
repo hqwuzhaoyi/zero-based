@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery chapter 2 Demo</title>
+</head>
+<body>
+
+<div id="box">
+    <div>
+        <div>
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, rem?</p>
+        </div>
+    </div>
+</div>
+
+<script src="../../../vendor/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+
+        var element = $('#info').parents(); 
+        var element2 = $('#info').parents('div');
+
+        console.log(element);
+        console.log(element2);
+
+        var element3 = $('#box > *');
+        var element4 = $('#box').children();
+
+        console.log(element3);
+        console.log(element4);
+
+        var element5 = $('#info').children();
+        var element6 = $('#info').contents();
+
+        console.log(element5);
+        console.log(element6);
+
+        var element7 = $('#box').find('p')
+
+        console.log(element7);
+
+    });
+</script>
+</body>
+</html>

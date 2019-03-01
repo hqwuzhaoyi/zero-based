@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 540px;
+    width: 500px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+}
+
+.content {
+    border: 2px solid #2c6acc;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+    margin-top: -2px;
+}
+
+.nav {
+    height: 44px;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.nav .dom0,
+.nav .dom2,
+.nav .jquery {
+    float: left;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    background: #2c6acc;
+    margin: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #2c6acc;
+    color:white;
+}
+
+.nav .active {
+    background: white;
+    border-bottom: 2px solid #fff;
+    color:#000;
+}

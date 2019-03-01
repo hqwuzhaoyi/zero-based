@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{height: 2000px;}
+        .box{
+            width: 200px;height:200px;background: red;
+            margin: 0 auto;overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+        <p>拖动</p>
+    </div>
+    <script>
+        var box=document.getElementById("box");
+        box.onmousedown=function(){
+            console.log("我被按下了");
+            
+        }
+        box.onmousemove=function(){
+            console.log("我被移动了");
+            
+        }
+        box.onmouseup=function(){
+            console.log("我被松开了");
+            
+        }
+        box.onclick=function(){
+            console.log("我被点击了");
+            
+        }
+
+        //游览器窗口尺寸发生改变时
+        window.onresize=function(){
+            console.log("我的尺寸被改变了");
+            
+        }
+        //拖动滚动条
+        window.onscroll=function(){
+            console.log("我被拖动了");
+            
+        }
+        box.onscroll=function(){
+            console.log("我是DIV的滚动条");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>arguments</title>
+</head>
+<body>
+    <script>
+		//补充代码
+
+		function avg(){
+			var i,sum=0,len=arguments.length;
+			for(i=0;i<len;i++){
+				sum+=arguments[i];
+			}
+
+			return (sum/len);
+		}
+	 document.write(parseInt(avg(1,2,3,4)));
+	</script>
+</body>
+</html>

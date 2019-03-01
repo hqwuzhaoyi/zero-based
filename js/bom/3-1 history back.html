@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>这是Index11.html</p>
+    <p><input type="button" value="后退" id="btn"></p>
+    <script>
+        var btn=document.getElementById("btn");
+        //点击btn按钮时回到历史记录上一部
+        btn.onclick=function(){
+            history.back();
+        }
+    </script>
+</body>
+</html>

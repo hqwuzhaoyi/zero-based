@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-1</title>
+    <style> 
+        .btn{
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            background: #00f;
+            color: #fff;
+            font-size: 14px;text-align: center;
+            border-radius: 5px;cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="弹出" onclick="alert('我是按钮')">
+    <!-- 鼠标滑过按钮是调用mouseoveerFn -->
+    <div  class="btn" onmouseover="mouseoverFn(this,'#f00')"    
+    onmouseout="mouseoutFn(this,'#00f')"         >开始</div>
+    <div  class="btn" onmouseover="mouseoverFn(this,'#0f0')"    
+    onmouseout="mouseoutFn(this,'#333')"         >结束</div>
+<script>
+    function mouseoverFn(btn,bgColor){
+        console.log(btn);
+        btn.style.background=bgColor;
+    }
+    function mouseoutFn(btn,bgColor){
+        btn.style.background=bgColor;
+    }
+</script>
+</body>
+</html>

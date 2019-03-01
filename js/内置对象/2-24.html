@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        var arr1=["a","b","c"],
+        arr2=["d","e",1,3],
+        arr3;
+        //concat
+        arr3=arr1.concat(arr2,["m",99,8]);
+        console.log(arr3);
+        //slice
+        var colors=["red","green","blue","yellow","orange"];
+        var newColors=colors.slice(1,3);
+        var newColors3=colors.slice(-2);
+        console.log(newColors3);
+        //完成以下代码段,实现b数组对a数组的拷贝,方法越多越好
+        var a=[1,"yes",3],b;
+
+        //push
+        // b=new Array;
+        // for(var i=0;i<a.length;i++){
+        //     b.push(a[i]);
+        // }
+        //concat
+        // b=[].concat(a);
+        console.log(b);
+        //slice
+        b=a.slice(0);
+        console.log(b);
+    </script>
+</body>
+</html>

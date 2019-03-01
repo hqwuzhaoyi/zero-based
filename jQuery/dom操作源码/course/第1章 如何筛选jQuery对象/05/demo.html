@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+
+<div id="box1">
+    <div id="box2">
+        <div id="box3">
+            <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, rem?</p>
+            <ul>
+                <li class="item1">item1</li>
+                <li class="item2">item2</li>
+                <li class="item3">item3</li>
+                <li class="item4">item4</li>
+                <li class="item5">item5</li>
+                <li class="item6">item6</li>
+                <li class="item7">item7</li>
+                <li class="item8">item8
+                    <ul></ul>
+                </li>
+                <li class="item9">item9</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="../../../vendor/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+
+        // console.log($('.item1, .item2'));
+        // console.log($('.item1').add('.item2'));
+
+        // console.log($('li').not(' .item4'));
+        // console.log($('li').filter('.item4'));
+
+        // console.log($('li').not(function (index) {
+        //     return $(this).hasClass('item4');
+        // }));
+        // console.log($('li').filter(function (index) {
+        //     return $(this).hasClass('item4');
+        // }));
+
+        // console.log($('li').has('ul'));
+
+        // console.log($('li').slice(0));
+        // console.log($('li').slice(3));
+        // console.log($('li').slice(3, 5));
+        // console.log($('li').slice(-2));
+
+        console.log($('div').map(function (index, domElement) {
+            
+            if(this.id==='box2'){
+                return false;
+            }
+            return this.title = this.id;
+        }));
+
+        console.log($('div').each(function (index, domElement) {
+            if(this.id==='box2'){
+                return true;
+            }
+            this.title = this.id;
+        }));
+    });
+</script>
+</body>
+</html>

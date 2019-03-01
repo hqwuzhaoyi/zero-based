@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+
+<body>
+    <img id="logo" src="../logo.jpg" alt="jQuery logo" class="img-jquery" title="jQuery logo" />
+    <img id="logo2" src="../logo.jpg" alt="jQuery logo2" class="img-jquery2" title="jQuery logo2" />
+    <input type="checkbox" id="check" tabindex="1" style="width:50px; height: 50px;" title="Check this!" description="just a checkbox" />
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+
+        var img = $('img');
+
+        // console.log(img.attr('TiTlE'));
+        // console.log(img.attr('title', '123'));
+        // console.log(img.attr('title'));
+
+        var checkbox = $('#check');
+        // console.log(checkbox.attr('checked'));
+        
+        // checkbox.checked = true;
+        // console.log(checkbox.attr('checked'));
+        // console.log(checkbox.checked)
+
+        //        console.log(img.attr('id'));
+        //        console.log(img.attr('class'));
+        //
+        //        console.log(checkbox.attr('tabIndex'));
+        //        console.log(checkbox.attr('TABINDEX'));
+        //        console.log(checkbox.attr('checked'));
+
+        // img.attr('title', 'new title');
+        // img.attr({
+        //     title: 'new title',
+        //     alt: 'new alt',
+        //     tabINDEX:2
+        // });
+
+        // img.attr('title', function(index, previousValue) {
+        //     console.log(previousValue)
+        //     return previousValue + '_new_';
+        // });
+
+
+        img.removeAttr('title alt class');
+        console.log(img.attr('title'))
+
+    });
+    </script>
+</body>
+
+</html>

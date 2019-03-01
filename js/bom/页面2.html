@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="前往页面3" id="btn3">
+    <input type="button" value="回到页面1" id="btn1">
+    <script>
+        var btn1=document.getElementById("btn1");
+        var btn3=document.getElementById("btn3");
+        btn1.onclick=function(){
+            history.go(-1);
+        }
+        btn3.onclick=function(){
+            location.href="页面3.html";
+        }
+    </script>
+</body>
+</html>

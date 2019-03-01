@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li>第一个li</li>
+		<li>第二个li</li>
+	</ul>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		//补充代码
+		var ul=$('ul');
+		ul.append('<li>第三个</li>');
+		var li=$('li');
+        li.eq(0).prepend('<a href="#">点我</a>');
+        li.eq(1).append('<a href="#">快点我</a>')
+      
+        
+	</script>
+</body>
+</html>

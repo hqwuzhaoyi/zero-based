@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3-7</title>
+</head>
+<body>
+    <script>
+        var str=prompt("请输入您要搜索的内容"),
+        a,b=0;
+        for(var i=0;i<str.length;i++){
+            a=str.indexOf("草",i);
+            if(a!=-1&&b!=0){
+                document.write("敏感字'草'在"+a+"位置被发现"+"<br>");
+                i=a;
+            }
+           
+            if(a!=-1&&b==0){
+                document.write("敏感字'草首次出现的位置是"+a+"<br>");
+                b=1;
+            }
+        }
+    </script>
+</body>
+</html>

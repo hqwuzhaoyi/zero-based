@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-9 </title>
+</head>
+
+<body>
+    <input type="button" value="开始" onmouseover="mouseoverFn(this,'purple')" onmouseout="mouseoutFn(this,'yellow')">
+    <input type="button" value="结束" onmouseover="mouseoverFn(this,'gray')" onmouseout="mouseoutFn(this,'gray')">
+
+    <script>
+        function mouseoverFn(btn, bgColor) {
+            btn.style.color = bgColor;
+        }
+
+        function mouseoutFn(btn, bgColor) {
+            btn.style.color = bgColor;
+        }
+    </script>
+</body>
+
+</html>

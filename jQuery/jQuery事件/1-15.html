@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='div1'>
+        <button>
+            顶
+        </button>
+    </div>
+    <div id='div2'></div>
+    <script src="1-15.js"></script>  
+    <script>
+        var div=document.getElementById('div1');
+        var clc=function(){
+            console.log("click");
+            
+        }
+        EventsUtility.addEvent(div,'click',clc);
+        EventsUtility.removeEvent(div,'click',clc);
+    </script>
+</body>
+
+</html>

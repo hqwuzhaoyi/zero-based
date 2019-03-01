@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5-10</title>
+</head>
+
+<body>
+    <script>//页面中输出该员工合同的到期日期
+        var today = new Date();
+        year = parseInt(prompt("请输入员工的入职年份"));
+        month = parseInt(prompt("请输入员工的入职月份")) - 1;
+        date = parseInt(prompt("请输入员工入职时间"));
+
+        function time(y, m, d) {
+            var date = new Date(y + 3, m, d),
+                ny = date.getFullYear(),
+                nm = date.getMonth() + 1,
+                nd = date.getDate();
+            document.write("该员工合同到期时间是:" + ny + "-" + nm + "-" + nd);
+        }
+        document.write("该员工入职时间是:" + year + "-" + (month+1) + "-" + date);
+        time(year, month, date);
+    </script>
+</body>
+
+</html>

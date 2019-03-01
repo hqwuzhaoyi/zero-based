@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getBrowser(){
+            var explore=navigator.userAgent.toLowerCase(),browser;
+            if(explore.indexOf("msie")>-1){
+                browser="IE";
+            }else if(explore.indexOf("chrome")>-1){
+                browser="chrome";
+            }else if(explore.indexOf("opera")>-1){
+                browser="opera";
+            }else if(explore.indexOf("safari")>-1){
+                browser="safari";
+            }
+            return browser;
+        }
+        var explore=getBrowser();
+        console.log(explore);
+        console.log(navigator.userAgent.toLowerCase());
+    </script>
+</body>
+</html>

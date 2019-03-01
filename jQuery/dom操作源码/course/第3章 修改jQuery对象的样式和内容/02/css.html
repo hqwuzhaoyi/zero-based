@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="demo">div</div>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+
+        var element = $('#demo');
+
+        element.css('width', 200);
+
+        element.css({
+            'background-color': 'red',
+            height: 200,
+            border: '10px solid #000',
+            marginTop: 100,
+            width: '-=50'
+        });
+
+        element.css('height', function(index, value) {
+            // console.log(value);
+            return parseInt(value, 10) + 50;
+        });
+
+        console.log(element.css('height'));
+        console.log(element.css(['height', 'width', 'border']));
+    });
+    </script>
+</body>
+
+</html>

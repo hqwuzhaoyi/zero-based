@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-32</title>
+</head>
+<body>
+    <script>
+        var arr=[],
+        a,
+        i=0;
+        while(a!=-1){
+            a=prompt("请输入您想输入的字符");
+            arr.push(a);
+            i++;
+            if(i==1||i==2){
+                arr.splice(i-1,1,"hello");
+            }
+        }
+        arr.pop();
+        console.log(arr);
+    </script>
+</body>
+</html>

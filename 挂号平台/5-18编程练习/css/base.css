@@ -1,0 +1,88 @@
+
+/*  */
+.top {
+    line-height: 30px; color: #acacac;
+}
+
+.top .call {
+    float: left;
+}
+
+.top .welcome {
+    float: right;
+}
+
+.welcome a {
+    padding-left: 15px;
+    color: #2da5e1;
+
+}
+
+.header .logo {
+    width: 402px;
+    height: 74px;
+    padding: 9px 0;
+    display: inline-block;
+   
+}
+.header a img{
+    width: 100%;
+    height: 100%;
+}
+
+.header .search {
+    float: right;
+    width: 326px;
+    height: 38px;
+    background: url(http://climg.mukewang.com/58c61b7e00012b9303260038.jpg);
+    margin-top:30px;
+}
+
+.nav a{
+    display: block;
+    width: 100px;
+    line-height: 35px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.nav a.right{
+    float: right;
+}
+.content-hot{
+    position: relative;
+}
+.content-hot-top {
+    width: 138px;
+    height: 30px;
+    background: url(http://climg.mukewang.com/58c61a4f0001967a01380030.jpg) no-repeat;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.content-hot-item{
+    float: left;
+}
+.content-hot-item a{
+    display: block;
+    width: 110px;height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    float: left;
+    margin-left:20px;
+}
+.displayall{
+    color: blue;
+    text-decoration: underline;
+    font-size: 12px;
+    position: absolute;
+    bottom: 18px;
+    right: 52px;
+}

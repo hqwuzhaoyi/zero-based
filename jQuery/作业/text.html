@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 25px;
+            background-color: lightcyan;
+            line-height: 25px;
+            border: 1px solid lightgray;
+            padding-left: 25px;
+            font-size: 15px;
+        }
+
+        ul {
+            font-size: 15px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>学生管理</div>
+        <ul>
+            <li>添加学生</li>
+            <li>修改学生</li>
+            <li>删除学生</li>
+        </ul>
+        <div>班级管理</div>
+        <ul>
+            <li>添加班级</li>
+            <li>修改班级</li>
+            <li>删除班级</li>
+        </ul>
+        <div>教师管理</div>
+        <ul>
+            <li>添加教师</li>
+            <li>修改教师</li>
+            <li>删除教师</li>
+        </ul>
+    </section>
+<script src="../../vendor/jquery-1.12.4.js"></script>
+<script>
+
+
+
+//  先将第二个和最后一个隐藏
+    $("ul:eq(1),ul:last-child").hide();
+    $("div").click(function(){
+//      console.log($(this));
+//这里选中的div,而我们要隐藏的是ul,所以要用next()
+        var ul= $(this).next() 
+        if(ul.is(":hidden")){
+            ul.show();
+        }else{
+            ul.hide();
+        }   
+    })
+
+</script>
+</body>
+
+</html>

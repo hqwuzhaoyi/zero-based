@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script><script type="text/javascript">
+$(document).ready(function(){
+    var box=$('box');
+    console.log(box.data());
+    
+    box.data('id','new data1');
+    console.log(box.data());
+    
+ 
+});
+</script>
+</head>
+<body>
+    <div class="box" est="newAt1" data-id="html data1"></div>
+    <div class="box" est="newAt2" data-id1="html data2"></div>
+</body>
+</html>

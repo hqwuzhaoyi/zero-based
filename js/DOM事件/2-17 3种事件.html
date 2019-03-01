@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>信息录入</title>
+</head>
+
+<body>
+    <input type="button" value="录入">
+    <script type="text/javascript">
+        var inputs = document.getElementsByTagName("input");
+        var entry = inputs[0];
+        var a = 0,
+            i = 0,
+            info = new Array;
+
+        // 第一种 调用在上面 函数声明
+        // entry.onclick = entryFn;
+
+        // function entryFn() {
+        //     while (a != "-1") {
+        //         a = prompt("请输入员工姓名");
+        //         info[i++] = a;
+        //     }
+        //     var k = info.length - 1;
+        //     for (i = i - 1; i > 0; i--) {
+        //         document.write("第" + (k - i + 1) + "个员工信息是" + info[k - i] + "<br>");
+
+        //     }
+        // }
+
+
+        //第二种 调用在下面 函数表达式 
+      
+        //         var entryFn = function () {
+        //                 while (a != "-1") {
+        //                     a = prompt("请输入员工姓名");
+        //                     info[i++] = a;
+        //                 }
+        //                 var k = info.length - 1;
+        //                 for (i = i - 1; i > 0; i--) {
+        //                     document.write("第" + (k - i + 1) + "个员工信息是" + info[k - i] + "<br>");
+
+        //                 }
+        // }
+        //                 entry.onclick = entryFn();
+
+            //第三种 没有调用 匿名函数
+            entry.onclick=function(){
+                while (a != "-1") {
+                a = prompt("请输入员工姓名");
+                info[i++] = a;
+            }
+            var k = info.length - 1;
+            for (i = i - 1; i > 0; i--) {
+                document.write("第" + (k - i + 1) + "个员工信息是" + info[k - i] + "<br>");
+
+            }
+            }
+
+        //补充代码
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery chapter 2 Demo</title>
+</head>
+<body>
+<ul>
+    <li class="item-1">item-1</li>
+    <li class="item-2">item-2</li>
+    <li class="item-3">item-3</li>
+    <li class="item-4">item-4</li>
+    <li class="item-5">item-5</li>
+    <li class="item-6">item-6</li>
+    <li class="item-7">item-7</li>
+    <li class="item-8">item-8</li>
+    <li class="item-9">item-9</li>
+</ul>
+
+<script src="../../../vendor/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        var elements = $('li');
+        console.log(elements.length);
+        var elements2 = $('div');
+        
+        // console.log(elements2[0].style.color = 'blue');  // error
+        // console.log(elements2.eq(0).addClass('blue'));  // no error
+        // console.log(elements2.addClass('blue'));  // no error
+
+
+        console.log(elements[0]);
+        console.log(elements[1]);
+
+        console.log(elements.get());
+        console.log(elements.get(0));
+        console.log(elements.get(1));
+        
+        console.log(elements.get(-1));
+
+        console.log(elements[-1]);
+        console.log(elements.get(100));
+        console.log(elements[100]);
+
+        console.log(elements.eq(0));
+        console.log($('li').eq(0));
+        console.log($('li:eq(0)'));
+
+        console.log(elements.eq(0));
+        console.log(elements.first());
+
+        console.log(elements.eq(-1));
+        console.log(elements.last());
+
+        console.log(elements.toArray());
+        console.log(elements.get());
+
+    });
+</script>
+</body>
+</html>

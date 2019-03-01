@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 5px solid red;
+        }
+
+        .bg1 {
+            background-color: green;
+        }
+
+        .border {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button class="btn">切换背景和边框颜色</button>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    //补充代码
+    var box = $('.box'),
+        btn = $('.btn');
+    btn.get(0).onclick = function () {
+        box.toggleClass('bg1 border');
+    }
+console.log(box.css('height width'));
+    
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1-20作业</title>
+</head>
+<body>
+	<script>
+	
+		function input(){		
+			var year,month,day;
+			year=prompt("请输入您的出生年份");
+			month=prompt("请输入您的出生月份");
+			day=prompt("请输入您的出生日期");
+			
+			return compute (year,month,day);
+		}
+
+		function compute(y,m,d){
+			var cal=[31,28,31,30,31,30,31,31,30,31,30,31],sum=0,i;
+			if(y%4==0&&y%100!=0||y%400==0)
+			{
+				cal[1]=29;
+			}
+			for(i=1;i<m;i++)
+				sum+=cal[i-1];
+		d= Number(d);
+			return sum+=d;
+
+		}
+
+
+		document.write(input());
+	
+	</script>
+</body>
+</html>

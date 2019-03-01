@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //window.setTimeout("alert('hello')",4000);
+        var fnCall=function(){
+            alert("world");
+        }
+        setTimeout(fnCall,1000);
+
+        var timeout1=setTimeout(function(){
+            alert("hello");
+        },2000)
+        //clearTimeout(timeout1);
+    </script>
+</body>
+</html>

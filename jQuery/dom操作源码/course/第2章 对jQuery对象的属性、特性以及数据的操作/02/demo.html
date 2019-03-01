@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+
+<img id="logo" src="../logo.jpg" alt="jQuery logo" class="img-jquery" title="jQuery logo" />
+
+<input type="checkbox" id="check"
+    tabindex="1" style="width:50px; height: 50px;"
+    title="Check this!" description="just a checkbox" checked="true" />
+
+<script src="../../../vendor/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+
+        // var checkbox = document.getElementById('check');
+       
+        // console.log(checkbox.getAttribute('title'));
+        // console.log(checkbox.title);
+
+        // console.log(checkbox.getAttribute('title') === checkbox.title);
+        // checkbox.title = 'new title';
+        // console.log(checkbox.getAttribute('title') === checkbox.title);
+
+        // checkbox.setAttribute('title', 'another title');
+        // console.log(checkbox.getAttribute('title'));
+        // console.log(checkbox.title);
+        // console.log(checkbox.getAttribute('title') === checkbox.title); 
+
+        // checkbox.title = 'another title2';
+        // console.log(checkbox.getAttribute('title'));
+        // console.log(checkbox.title);
+        // console.log(checkbox.getAttribute('title') === checkbox.title); 
+
+
+        // checkbox.checked = false;
+        // console.log(checkbox.checked);
+        // console.log(checkbox.getAttribute('checked'));
+        
+
+        // checkbox.setAttribute('checked','false');
+        // console.log(checkbox.checked);
+        // console.log(checkbox.getAttribute('checked'));
+
+        // checkbox.description = 'new description';
+        // console.log(checkbox.description);
+        // console.log(checkbox.getAttribute('description'));
+           
+        // checkbox.setAttribute('description','new description')
+        // console.log(checkbox.description);
+        // console.log(checkbox.getAttribute('description')); 
+
+        var img = document.getElementById('logo'); 
+        console.log(img.src); 
+        console.log(img.getAttribute('src')); 
+
+        img.src = "logo.jpg";
+        console.log(img.src); 
+        console.log(img.getAttribute('src')); 
+
+        console.log(img.className); 
+        console.log(img.getAttribute('class')); 
+    });
+</script>
+</body>
+</html>

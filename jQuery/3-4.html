@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div class="box">.box</div>
+        <div class="box">.box</div>
+        <input type="text" name="username">
+        <script src="../vendor/jquery-1.12.4.js"></script>
+        <script>
+            $(function(){
+                var element1=$('#box1'),
+                element2=$('#box2,#box1'),
+                element3=$('.box'),
+                element4=$('[name=username]'),
+                element5=$('div'),
+                element6=$(document.getElementById('box1'));//包装成jquery对象
+
+                console.log(element1);
+                console.log(element2);
+                console.log(element3);
+                console.log(element4);
+                console.log(element5);
+                console.log(element6);
+            })
+        </script>
+</body>
+</html>

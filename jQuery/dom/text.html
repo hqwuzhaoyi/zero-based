@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="../../vendor/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            var arr = ["a", "b", "c", "d"];
+            var arr1 = $.map(arr, function (value, index) { //注意回调函数的参数位置和$.each()的不一致
+                console.log(index + value);
+                if(value=='b')
+                return false;
+                var val = value.toUpperCase(); //可以在回调函数中对成员进行操作，然后将其返回到新的数组中。toUpperCase()方法转换字符为大写。
+                return val; //一定要使用return返回值，否则新数组接受不到
+            });
+            console.log(arr1);
+            var res = Object.prototype.toString.call(arr1); //使用Object.prototype.toString.call()方法返回传入变量的类型
+            console.log(res);
+
+            $(function () {
+                var arr = ["a", "b", "c", "d"];
+                $.each(arr, function (index, value) {
+                    console.log(value + " " + index);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

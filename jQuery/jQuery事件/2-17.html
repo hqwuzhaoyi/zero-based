@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      /*此处写代码*/
+    </style>
+    <link rel="stylesheet" href="css/2-17.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="dom0 active">DOM0</div>
+        <div class="dom2">DOM2</div>
+        <div class="jquery">jQuery</div>
+      </div>
+      <div class="content">DOM0</div>
+    </div>
+
+    <!-- 此处写代码 -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var dom0 = $(".dom0"),
+        div = $(".nav>div");
+      //siblings
+      div.click(function(event) {
+        console.log(
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active")
+        );
+        $(".content").text($(this).text());
+      });
+      //each 快捷
+      function togg(event) {
+        div.each(function() {
+          $(this).removeClass("active");
+        });
+        $(this).addClass("active"); //.toggleClass一样
+        $(".content").text($(this).text());
+      }
+      div.click(togg);
+      //自定义
+      div
+        .on("togg", function(event) {
+          div.each(function() {
+            $(this).removeClass("active");
+          });
+          $(this).addClass("active"); //.toggleClass一样
+          $(".content").text($(this).text());
+        })
+        .on("click", function() {
+          $(this).trigger("togg");
+        });
+    </script>
+  </body>
+</html>

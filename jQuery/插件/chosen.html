@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/chosen/1.8.8.rc6/chosen.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <select name="demo" id="demo" style="width: 300px">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+    <br>
+    <select name="demo2" id="demo2" multiple data-placeholder="请选择...">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <script src="../../vendor/jquery-1.12.4.js"></script>
+    <script src="https://cdn.bootcss.com/chosen/1.8.8.rc6/chosen.jquery.js"></script>
+    <script>
+        $(function(){
+            $("#demo").chosen();
+            $("#demo2").chosen({
+                width:'50%'
+            });
+        });
+    </script>
+</body>
+</html>

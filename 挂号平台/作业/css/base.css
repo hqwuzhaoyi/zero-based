@@ -1,0 +1,423 @@
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+select,
+input {
+  border: none;
+  outline: none;
+}
+
+/* top模块内样式 */
+.top {
+  line-height: 30px;
+  font-size: 13px;
+  color: #868686;
+}
+
+.top .call {
+  float: left;
+  padding-left: 20px;
+  background: url(../img/icon-call.png) no-repeat center left;
+}
+
+.top .welcome {
+  float: right;
+}
+
+.top a {
+  color: #2da5e1;
+  padding-left: 10px;
+}
+
+/* header模块内样式 */
+.header .logo {
+  width: 402px;
+  height: 74px;
+  padding: 9px 0;
+  display: inline-block;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .search {
+  width: 326px;
+  height: 38px;
+  /* position: absolute;
+    right: 0;
+    top: 29px; */
+  float: right;
+  margin: 27px 0;
+
+}
+
+/* nav模块内样式 */
+.nav .link {
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 16px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.nav .right {
+  float: right;
+}
+
+.nav .menu {
+  width: 130px;
+  padding-right: 30px;
+  background-color: #1fa4f0;
+  position: relative;
+}
+
+.nav .menu .menu-list {
+  background-color: #1fa4f0;
+  width: 100%;
+  height: 423px;
+  position: absolute;
+  /* position默认宽高都是0 */
+  left: 0;
+  top: 36px;
+}
+
+/* profile模块内样式 */
+.profile {
+  padding: 0 25px;
+  width: 950px;
+}
+
+.profile-caption {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #dcdddd;
+  margin-bottom: 12px;
+}
+
+.profile-caption .name {
+  font-size: 16px;
+  float: left;
+  line-height: 52px;
+}
+
+.profile-caption .name span {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #f29600;
+}
+
+.profile-caption .right {
+  float: right;
+  font-size: 12px;
+  line-height: 52px;
+}
+
+.profile-caption .right span {
+  color: blue;
+
+}
+
+.profile-caption .right p {
+  display: inline-block;
+}
+
+.profile-content {
+  height: 195px;
+  width: 100%;
+}
+
+.profile-content .photo {
+  width: 200px;
+  height: 150px;
+  float: left;
+}
+
+.profile-content .map {
+  width: 250px;
+  height: 165px;
+  float: right;
+}
+
+.profile-content .info {
+  float: left;
+  width: 450px;
+  margin-left: 30px;
+  font-size: 12px;
+  color: #888;
+  line-height: 20px;
+
+}
+
+.profile-content .info .address {
+  padding-left: 30px;
+  background: url(../img/icon-web.png) 0 0 no-repeat;
+  margin-bottom: 8px;
+}
+
+.profile-content .info .friendlink {
+  padding-left: 30px;
+  background: url(../img/icon-web.png) 0 -20px no-repeat;
+  margin-bottom: 8px;
+
+}
+
+.profile-content .info .phone {
+  padding-left: 30px;
+  background: url(../img/icon-web.png) 0 -42px no-repeat;
+  margin-bottom: 8px;
+
+}
+
+.profile-content .info .search {
+  padding-left: 30px;
+  background: url(../img/icon-web.png) 0 -63px no-repeat;
+  margin-bottom: 8px;
+  height: 16px;
+}
+
+/* content模块区 */
+.content-caption {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #60bff2;
+  margin-bottom: 20px;
+}
+
+.content-caption .item {
+  float: left;
+  width: 110px;
+  line-height: 30px;
+  color: #60bff2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content-caption .item_focus {
+  background: #60bff2;
+  color: #fff;
+
+}
+
+/* content模块内容区1 */
+.content-block .register {}
+
+.register .register-list {
+  width: 710px;
+  border: 1px solid #f4f6fa;
+  float: left;
+}
+
+.register-rule .caption,
+.register-list .register-list-caption {
+  width: 100%;
+  height: 40px;
+  background: #f4f6fa;
+  line-height: 40px;
+  font-size: 14px;
+  text-indent: 30px;
+}
+
+.register-list .register-list-content {
+  font-size: 14px;
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  line-height: 30px;
+  border-bottom: 1px solid #f4f6fa;
+  margin-bottom: -1px;
+}
+
+.register-list-content .left {
+  float: left;
+  background: #f2fbff;
+  color: #868686;
+  width: 145px;
+  text-align: center;
+  height: 100%;
+}
+
+.register-list-content .right {
+  width: 565px;
+  float: right;
+
+}
+
+.register-list-content .right span {
+  width: 105px;
+  padding-left: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.register-rule {
+  float: right;
+  width: 275px;
+  height: 285px;
+  border: 1px solid #f4f6fa;
+}
+
+.register-rule .caption {
+  text-align: left;
+  text-indent: 15px;
+}
+
+.register-rule .caption span {
+  color: #60bff2;
+  font-size: 12px;
+}
+
+.register-rule .content {
+  width: 265px;
+  height: 100%;
+  overflow: auto;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+}
+
+.register-rule .content .left {
+  float: left;
+  width: 72px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.register-rule .content .left span {
+  margin: 5px 0;
+  display: block;
+}
+
+.register-rule .content .left span:nth-child(4) {
+  margin-top: 15px;
+}
+
+.register-rule .content .right {
+  float: right;
+  width: 150px;
+  color: #868686;
+
+  margin-right: 10px;
+}
+
+.register-rule .content .right p {
+  margin: 5px 0;
+}
+
+/* content模块内容区2 */
+.details {}
+
+.details p {
+  font-size: 12px;
+  line-height: 1.5em;
+  text-indent: 2em;
+  padding: 5px 15px;
+}
+
+/* content模块内容区3 */
+div.notice {}
+
+.notice h1 {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.notice .section {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.notice .section-caption {
+  font-weight: bold;
+}
+
+.notice .section-content {}
+
+.ident2em {
+  text-indent: 2em;
+}
+
+/* content模块内容区4 */
+.stopinfo h1 {
+  width: 400px;
+
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 18px;
+
+}
+
+.stopinfo table {
+  width: 100%;
+  border: 1px solid #dcdddd;
+  border-collapse: collapse;
+  color:rgb(85, 85, 85);
+  font-size: 13px;
+}
+
+.stopinfo table tr {
+  height: 30px;
+  line-height: 30px;
+}
+
+.stopinfo table tr td {
+  text-align: center;
+  border: 1px solid #dcdddd;
+}
+
+/* content模块内容区5 */
+  div.cancel{
+    border-top: 1px solid #dcdddd;
+    border-bottom: 1px solid #dcdddd;
+    height: 200px;
+  }
+  .cancel .cancel-content{
+text-align: center;
+line-height: 200px;
+  }
+  .cancel-content span{
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .cancel-content input{
+width: 192px;
+height: 30px;
+border: 1px solid #dcdddd;
+padding: 0;
+box-sizing: border-box;
+margin-right: 10px;
+  }
+  .cancel-content button{
+width: 108px;
+height: 30px;
+background: #00b3ec;
+color: #fff;
+border: none;
+padding: 0;
+cursor: pointer;
+vertical-align: middle;
+  }
+
+
+.footer {
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}

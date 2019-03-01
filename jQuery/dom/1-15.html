@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <a href="#">innertext</a>
+    </div>
+    <ul>
+        <li class="li1">第1个li</li>
+        <li class="li2">第2个li</li>
+        <li class="li3">第3个li</li>
+        <li class="li4">第4个li</li>
+        <li class="li5">第5个li</li>
+        <li class="li6">第6个li</li>
+        <li class="li7">第7个li</li>
+        <li class="li8">第8个li</li>
+        <li class="li9">第9个li</li>
+    </ul>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var box = document.getElementById("box");
+        console.log(box.innerHTML);
+        console.log(box.innerText);
+
+        var li5 = $(".li5");
+        //补充代码
+       
+        li5.nextUntil('.li7')[0].innerHTML='我被改变了';
+        li5.prev()[0].innerText='我也被改变了';
+        console.log( li5.nextUntil('.li7')[0].innerHTML);
+        console.log(li5.prev()[0].innerText);
+    </script>
+</body>
+
+</html>

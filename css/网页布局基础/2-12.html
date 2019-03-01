@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-12</title>
+    <style>
+        *{margin:0;padding: 0;}
+        a{text-decoration: none;color: aliceblue;}
+        li{list-style-type: none;color: aliceblue;}
+        .header{
+            width: 100%;
+            height: 100px;
+            background: black;
+            overflow: hidden;
+            zoom: 1;
+        }
+        img{
+            float: left;
+        }
+        
+        .nav {
+            float: right;
+            width: 650px;
+            height: 100px;
+            }
+        .nav li{
+            width: 20%;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            }
+        .main{
+            background-color: cornflowerblue;
+        }
+        .container{
+            width:1400px; ;
+           
+            margin: 0 auto;
+            overflow: hidden;
+            zoom: 1;
+           
+        }
+        .left{
+            float: left;
+            width: 400px; padding: 150px 0;
+
+        }
+        .middle{
+            float:left; 
+            width:400px;
+            line-height: 2em; padding: 150px 0;
+           
+        }
+        .right{
+            float: right; width: 400px;
+            height: 1000px;;
+            line-height: 2em;
+         padding-left:100px;
+            border-left: 5px solid orange; padding-top: 150px;
+        }
+        h1,p{
+            line-height: 2em;
+            margin: 5px 10px;
+            padding: 5px;
+        }
+        span{
+            background: orange;
+            margin-right: 15px;
+        }
+        input{
+            width:250px;
+            height: 50px;
+            margin: 10px 15px;
+            border: 0px;
+        }
+        #sub{
+            background: orange;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background: black;
+            overflow: hidden;
+            zoom:1;
+            position: fixed;
+            bottom: 0;
+        }
+        .footerwaper{
+            width: 800px;
+            overflow: hidden;
+            zoom: 1;
+            margin: 0 auto;
+        }
+        .footerwaper li{
+            float: left;
+            width: 16%;
+            height: 100px;
+            line-height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       
+        
+        <div class="page_container">
+            <img src="http://climg.mukewang.com/59093e9c00016ce303000100.png" alt="">
+            <ul class="nav">
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业路径</li>
+                <li><a href="#">实战</a></li>
+                <li><a href="#">猿问</a></li>
+                <li><a href="#">手记</a></li>
+            </ul>
+        </div>
+        </div>
+        
+<div class="main">
+    <div class="container">
+        <div class="left">
+                <h1>课程推荐</h1>
+                <p><span>职业路径</span>HTML5与CSS3实现动态网页</p>
+                <p><span>职业路径</span>零基础入门Android语法与界面</p>
+                <p><span>职业路径</span>IOS基础语法与常用控件</p>
+                <p><span>职业路径</span>PHP入门开发</p>
+                <p><span>职业路径</span>JAVA入门开发</p>
+        </div>
+        <div class="middle">
+                <h1>相关课程</h1>
+                <p>HTML &nbsp;&nbsp;&nbsp; CSS &nbsp;&nbsp;&nbsp; JAVASCRIPT</p>
+                <P>HTML5 &nbsp;&nbsp;&nbsp; CSS3&nbsp;&nbsp;&nbsp; Jquery</P>
+                    <p>移动端基础  &nbsp;&nbsp;&nbsp; 移动端APP开发</p>
+        </div>
+        <div class="right">
+                <h1>登录</h1>
+                <form action="">
+                    <input type="text" name="name" placeholder="请输入登录邮箱手机号">
+                    <br>
+                    <input type="password" name="paw" placeholder="6-16位密码，区分大小写，不能用空格">
+                    <input type="submit" value="登录" id="sub">
+                </form>
+        </div>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="waper">
+            <ul class="footerwaper">
+                    <li> <a href="#">网站首页</a></li>
+                    <li> <a href="#">企业合作</a></li>
+                    <li> <a href="#">人才招聘</a></li>
+                    <li> <a href="#">联系我们</a></li>
+                    <li> <a href="#">常见问题</a></li>
+                    <li> <a href="#">友情链接</a></li>   
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

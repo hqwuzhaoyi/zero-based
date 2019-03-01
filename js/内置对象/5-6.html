@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5-6</title>
+</head>
+<body>
+    <script>
+        var today=new Date();
+        document.write(today);
+        var year=today.getFullYear(),
+            month=today.getMonth()+1,
+            date=today.getDate(),
+            day=today.getDay(),
+            hours=today.getHours(),
+            minutes=today.getMinutes(),
+            seconds=today.getSeconds();
+        var weeks=["日","一","二","三","四","五","六"];
+        document.write("今天是"+year+"年"+month+"月"+day+"日星期"+weeks[day]);
+        document.write("<br>"+hours+":"+minutes+":"+seconds);
+    </script>
+</body>
+</html>

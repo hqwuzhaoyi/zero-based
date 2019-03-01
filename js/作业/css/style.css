@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+}
+
+.main {
+    width: 1200px;
+    height: 540px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.menu {
+    width: 1200px;
+    height: 80px;
+    position: absolute;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.menu .menu-item {
+    float: left;
+    width: 25%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+    font-size: 22px;
+}
+
+.menu .item-active {
+    background-color: #ffcc00;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.banner {
+    width: 1200px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    left:0;
+}
+
+.banner .banner-slide {
+    width: 1200px;
+    height: 460px;
+    position: absolute;
+    display: none;
+}
+
+.slide1 {
+    background: url(../img/1.jpg);
+}
+
+.slide2 {
+    background: url(../img/3.jpg);
+}
+
+.slide3 {
+    background: url(../img/4.jpg);
+}
+
+.slide4 {
+    background: url(../img/5.jpg);
+}
+
+.banner .slide-avtive {
+    display: block;
+}

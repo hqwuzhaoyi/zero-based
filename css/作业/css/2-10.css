@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI";
+}
+body{
+    min-width: 1200px;;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    
+    width: 100%;
+    height: 80px;
+    background: #07cbc9;
+    overflow: hidden;
+    zoom: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9  ;
+}
+.header .logo{
+    padding-top: 14px;
+    float: left;
+    padding-left: 150px;
+}
+.header .nav{
+    float: right;
+}
+
+.header .nav ul{
+    padding-right:100px;
+}
+.header .nav ul li{
+    float: left;
+    list-style-type: none;
+    width: 80px;
+    text-align: center;
+   
+    font-weight: bold;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 3px;
+}
+.header .nav ul li  a{
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .nav ul li:hover{
+    background: black;
+}
+.banner{
+ 
+    height: 600px;
+}
+.banner .ban-img img{
+    width: 100%;
+    height: 600px;
+    
+
+}
+.banner  .layer{
+    position: absolute;
+    top:80px;
+    width: 100%;
+    height: 600px;
+    background: black;
+    z-index: 1;
+    opacity: 0.5;   
+}
+.banner .layer-top{
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -250px;
+   
+
+}
+
+.banner .layer-top .formtext{
+    BACKGROUND-COLOR: transparent;
+    height: 40px;
+    width: 500px;
+    margin: 10px;
+    border: rgb(128, 128, 128) 2px solid;
+}
+
+.banner .layer-top textarea{
+    BACKGROUND-COLOR: transparent;
+    border: rgb(128, 128, 128) 2px solid;
+    margin: 10px;
+    width: 500px;
+    padding-top: 1em;
+}
+.banner .layer-top .btn{
+    BACKGROUND-COLOR: transparent;
+    border: rgb(128, 128, 128) 2px solid;
+    margin: 10px;
+    width: 120px;
+    color: rgb(150, 178, 189);
+    padding: 10px 1px;
+    text-align: center;
+    margin-left: 193px;
+}
+.banner .layer-top .formtext:hover{
+    border: #07cbc9 2px solid;
+}
+.banner .layer-top textarea:hover{
+    border: #07cbc9 2px solid;
+}
+.banner .layer-top .btn:hover{
+    border: 0px;
+    background: #07cbc9;
+    color: #fff;
+}
+.about{
+    width: 100%;
+    padding-top: 40px;
+}
+.about .about-top{
+    width: 100%;
+
+}
+.title{
+    font-size:50px;
+    text-align: center;
+    font-weight:bold;
+    margin: 20px;
+}
+hr{
+    width: 40px;
+   color: green;
+   margin: 0 auto;  
+   border: solid 2px #07cbc9;
+ 
+   
+}
+.con{
+    text-align: center;
+    width: 520px;
+    margin: 0 auto;  
+    color: #07cbc9;
+    padding-top:20px;
+    padding-bottom: 40px;
+}
+.about .middle{
+    width: 570px;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom:100px;
+}
+.about .middle .middle-img img{
+    width: 570px;
+    height: 380px;
+}
+.about .middle  .left{
+    position: absolute;
+    width:370px;
+    height:340px;
+    top:0;
+    margin-left:-240px;
+}
+
+.about .middle  .left .left-title{
+    font-size:36px;
+    padding: 10px;
+}
+.about .middle  .left .left-con{
+    border:1px solid #c5c5c5;
+    width:360px;
+    height:260px;
+    position: relative;
+}
+.about .middle  .left .left-con .left-layer{
+    width:360px;
+    height: 260px;
+    background: #fff;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.about .middle  .left .left-con .left-word{
+    margin: 30px 15px;
+    z-index: 2;
+    position: absolute;
+    line-height: 1.5em;
+}
+.about .middle  .left .left-con .left-btn{
+    position: absolute;
+    top:180px;
+    left:15px;
+    
+}
+.left-btn{
+    border: none;
+    width: 105px;
+    height: 45px;
+    background: black;
+    color: #fff;
+}
+ .left-btn:hover{
+    background: transparent;
+    border:2px solid black;
+    color:black;
+    cursor: pointer;
+}
+.about .middle  .right {
+    position: absolute;
+    top: 0;
+    right: -275px;
+    width:240px;
+}
+.about .middle  .right .right-con{
+    border:1px solid #c5c5c5;
+    margin-bottom: 30px;
+}
+.about .middle  .right .right-con .right-title{
+text-align: center;
+font-size: 36px;
+padding: 20px 0;
+font-weight: bold;
+}
+.about .middle  .right .right-con .right-word{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.about .bottom {
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.about .bottom .bottom-img{
+    width: 25%;
+    float: left;
+    height:400px;
+   
+}
+.about .bottom .bottom-img img{
+    height:400px;
+    width: 400px;
+}
+.about .bottom .bottom-con{
+    width: 25%;
+    float: left;
+    height:400px;
+    background: #07cbc9;
+    
+}
+.about .bottom .bottom-con .bottom-title{
+    font-size: 30px;
+    color: #fff;
+    line-height: 2em;
+    padding: 0 20px;
+}
+.about .bottom .bottom-con .bottom-word1{
+    font-size: 18px;
+    color: #fff;
+    line-height: 2em;
+    padding: 0 20px;
+}
+.about .bottom .bottom-con .bottom-word2{
+    font-size: 14px;
+    color: #dddbd7;
+    line-height: 1.5em;
+    padding: 0 20px;
+}
+.about .bottom .bottom-con .left-btn{
+    margin-left:145px;
+    margin-top:50px;
+}
+.gallery{
+    padding-top:50px;
+}
+.gallery .content{
+    padding-top:20px;
+    width:1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.gallery .content .gallery-img{
+    float: left;
+    margin:15px 15px 0 15px; 
+    width: 360px;
+    height: 250px;
+   
+}
+.gallery .content .gallery-img img{
+    width: 360px;
+    height: 250px;
+}
+.gallery .content .gallery-word{
+    float: left;
+    height: 64px;
+    width:  360px;
+    margin:0 15px 15px 15px;;  
+    background: black;
+    color: #fff;
+    text-align: center;
+    line-height: 64px;
+}
+.footer{
+    background: #07cbc9;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 100px;
+}

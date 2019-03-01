@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border: none;
+}
+header{
+    background: #f3f5f7;
+    height: 28px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+}
+/* 标签显示区域 */
+header .headcontent{
+    margin: 0 auto;
+    text-align: center;
+    height: 28px;
+    width: 1200px;
+    min-width: 1000px;
+    padding: 0 20px;
+  
+}
+a.headerlink{
+    display: block;
+    float: left;
+    margin:5px 10px;
+    width: 80px;
+}
+a.headerlink:hover{
+    color:red;
+}
+/* 右边导航菜单*/
+div.headerright{
+    float: left;
+    margin-left:380px;
+}
+
+.header-menu-content img{
+   margin-left:5px;
+}
+.header-menu-content{
+    display: none;
+    width:100px;
+    overflow: hidden;
+}
+.headerright .active{
+    display: block;
+}

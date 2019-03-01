@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 500px;
+    height: 200px;
+    margin:0 auto;
+    border:1px solid #aaa;
+    background-color: #ababab;
+    color: #fff;           
+    font-weight: bolder;    
+    position: relative;
+    
+}
+.box div{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    /*此处写代码*/
+    /* 1 */
+    /* margin-top: 80px;
+    margin-left:150px; */
+      /* 2 */
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-20px;
+    margin-left:-100px;
+    /* 3 */
+    /* position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto auto; */
+
+}

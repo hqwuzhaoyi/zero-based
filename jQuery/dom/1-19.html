@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>习题</title>
+</head>
+
+<body>
+
+    <h1>筛选和遍历jQuery对象</h1>
+
+    <ul>
+        <li class="item1">item1</li>
+        <li class="item2">item2</li>
+        <li class="item3">item3</li>
+        <li class="item4">item4</li>
+        <li class="item5">item5</li>
+        <li class="item6">item6</li>
+        <li class="item7">item7</li>
+        <li class="item8">item8</li>
+        <li class="item9">item9</li>
+    </ul>
+
+    <script src='../../vendor/jquery-1.12.4.js'></script>
+    <script>
+        $(function () {
+
+            //此处写代码
+            //     console.log($("li"));
+            //    alert($("li").size());
+            var arr = $('li').map(function (element) {
+                console.log(this.className);
+                console.log(this.innerHTML);
+                console.log(this.innerText);
+                return this.innerText;
+            });
+            console.log(arr.toArray());
+
+
+            var arr1=[];
+            $('li').each(function(index){
+                arr1[index]=this.innerHTML;
+                console.log(this.className);
+                console.log(this.innerHTML);
+                console.log(this.innerText);
+            });
+            console.log(arr1);
+            
+        });
+    </script>
+</body>
+
+</html>

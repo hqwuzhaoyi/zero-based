@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-1</title>
+    <style>
+        .box1{height:400px;background: #ccc;}
+    .box2{height: 600px;background:#666;}
+    </style>
+</head>
+
+<body>
+    <div class="box1" id="top"></div>
+    <div class="box2"></div>
+    <input type="button" id="btn" value="返回顶部">
+    <a href="C:\Users\hqwuz\Desktop\前段学习\慕课网\js\bom\3-1 history back.html">history</a>
+    <script>
+        console.log(location.href);
+        console.log(location.hash);
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            location.hash="#top";
+        }
+        console.log(location.pathname);
+        
+    </script>
+</body>
+
+</html>

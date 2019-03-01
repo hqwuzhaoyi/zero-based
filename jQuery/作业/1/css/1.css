@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 1200px;
+    height: 460px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.banner {
+    width: 1200px;
+    height: 460px;
+}
+
+/* 图片 */
+.slide {
+    width: 1200px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+}
+
+.slide1 {
+    background: url(../image/1.jpg) no-repeat;
+}
+
+.slide2 {
+    background: url(../image/2.jpg) no-repeat;
+}
+
+.slide3 {
+    background: url(../image/3.jpg) no-repeat;
+}
+
+.slide4 {
+    background: url(../image/4.jpg) no-repeat;
+}
+
+.slide5 {
+    background: url(../image/5.jpg) no-repeat;
+}
+
+/* 按钮 */
+.button {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    top: 50%;
+    margin-top: -40px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #333;
+    opacity: 0.8;
+    /* 半透明80 下面是低版本兼容 */
+    filter: alpha(opacity=80);
+}
+
+/* 上按钮 */
+.prev {
+    background: url(../image/pre2.png) no-repeat center center;
+}
+
+/* 下按钮 */
+.next {
+    background: url(../image/pre.png) no-repeat center center;
+    right: 20px;
+    left: auto;
+}
+
+/* 圆点 */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: rgba(7, 17, 27, 0.4);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+    margin: 3px;
+    cursor: pointer;
+}
+
+.dots span.active {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4);
+}
